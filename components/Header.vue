@@ -22,10 +22,6 @@ const models = ref({
   name: "",
 });
 
-const run = (item: any) => {
-  console.log(item);
-};
-
 const { data } = await useFetch("https://api.esnafbuy.com/v1.0/overviewSubcategories");
 
 const fetchDataForMobile = () => {
